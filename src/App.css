@@ -5,6 +5,7 @@ body {
 
 nav {
     padding: 10px;
+    border-bottom: 2px solid gainsboro;
 }
 
 nav ul {
@@ -18,12 +19,13 @@ nav ul {
 }
 
 nav ul li a {
+    color: #2d3748;
     padding: 20px;
     border-radius: 5%;
 }
 
 nav ul li a:hover {
-    color: orange;
+    color: #038fde;
 }
 
 nav ul li a {
@@ -33,13 +35,18 @@ nav ul li a {
 .dropdown {
     position: relative;
     display: inline-block;
+    color: #2d3748;
+}
+
+.dropdown:hover{
+    color: #038fde;
 }
 
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    color: black;
+    background-color: white;
+    color: #2d3748;
     cursor: default;
 }
 
@@ -60,5 +67,12 @@ nav ul li a {
 }
 
 .submenu a:hover {
-    color: orange;
+    color: #038fde;
 }
+
+@media only screen and (max-width: 600px) {
+    .submenu{
+        display: flex;
+        flex-direction: column;
+    }
+  }
